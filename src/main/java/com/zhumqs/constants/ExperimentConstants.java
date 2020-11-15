@@ -11,4 +11,4 @@ public class ExperimentConstants {
     public static final double DEFAULT_WEIGHT2 = 0.5;
     public static final double DEFAULT_SOCIAL_WEIGHT = 0.8;
     public static final int DEFAULT_USER_NUMBER = 50;
-    public static final int DEF
+    public static final int DEFAULT_CONTENT_NUMBER = 2
