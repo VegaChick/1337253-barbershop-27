@@ -31,3 +31,24 @@ public class EncounterProbability {
      * @return
      */
     public double[][] getEncounterMatrix(double weight1, double weight2) {
+        int userNumber = users.size();
+        double[][] encounterMat = new double[userNumber][userNumber];
+        for (int i = 0; i < userNumber; i++) {
+            for (int j = 0; j < userNumber; j++) {
+                if (i == j) {
+                    encounterMat[i][j] = 1;
+                } else {
+                    encounterMat[i][j] = weight1 * getSocialRelevance(i + 1, j + 1, weight2)
+                            + (1 -  weight1) * getUserSimilarity(i + 1, j + 1);
+                }
+            }
+        }
+        return encounterMat;
+    }
+
+    private double getUserSimilarity(int userId1, int userId2) {
+        double[] feature1 = normalizationUserFeature(userId1);
+        double[] feature2 = normalizationUserFeature(userId2);
+        double d1 = 0.0, d2 = 0.0, d3 = 0.0;
+        for (int i = 0; i < feature1.length; i++) {
+            d1 += feature1[i] * feature2[i];
