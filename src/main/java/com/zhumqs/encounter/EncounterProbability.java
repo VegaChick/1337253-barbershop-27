@@ -52,3 +52,32 @@ public class EncounterProbability {
         double d1 = 0.0, d2 = 0.0, d3 = 0.0;
         for (int i = 0; i < feature1.length; i++) {
             d1 += feature1[i] * feature2[i];
+            d2 += feature1[i] * feature1[i];
+            d3 += feature2[i] * feature2[i];
+        }
+        return d1 / (d2 * d3);
+    }
+
+    private double[] normalizationUserFeature(int userId) {
+        double[] normalizedFeature = new double[6];
+        MobileUser user = users.get(userId - 1);
+        normalizedFeature[0] = (user.getAge() -  20) * 1.0 / 30;
+        normalizedFeature[1] = 0.5;
+        normalizedFeature[2] = user.getCity() * 1.0 /  30;
+        normalizedFeature[3] = user.getInstitute() * 1.0 / 30;
+        normalizedFeature[4] = user.getCity() * 1.0 / 30;
+
+        List<Integer> interests = user.getInterests();
+        int count = 0;
+        for (int i : interests) {
+            count += i;
+        }
+        normalizedFeature[5] = count * 1.0 / (interests.size() * 30);
+
+        return normalizedFeature;
+    }
+
+    private double getSocialRelevance(int userId1, int userId2, double wight) {
+        double d1 = getTieRelevance(userId1, userId2);
+        double d2 = getNumberRelevance(userId1, userId2);
+        return wight * d1 / (1 + d1) + (1 - wight) * d2 / (1 + d2);
