@@ -81,3 +81,23 @@ public class EncounterProbability {
         double d1 = getTieRelevance(userId1, userId2);
         double d2 = getNumberRelevance(userId1, userId2);
         return wight * d1 / (1 + d1) + (1 - wight) * d2 / (1 + d2);
+    }
+
+    private double getNumberRelevance(int userId1, int userId2) {
+        List<Integer> ties1 = getSocialTie(userId1);
+        List<Integer> ties2 = getSocialTie(userId2);
+
+        Set<Integer> friendSet1 = new HashSet<>();
+        Set<Integer> friendSet2 = new HashSet<>();
+        for (Integer i : ties1) {
+            friendSet1.addAll(getSocialTie(i));
+        }
+        for (Integer i : ties2) {
+            friendSet2.addAll(getSocialTie(i));
+        }
+
+        return ((ties1.size() * 1.0 / friendSet1.size())) * ((ties2.size() * 1.0 / friendSet2.size()));
+    }
+
+    private double getTieRelevance(int userId1, int userId2) {
+        List<Integer> ties1 = getSocialTie(userId1);
