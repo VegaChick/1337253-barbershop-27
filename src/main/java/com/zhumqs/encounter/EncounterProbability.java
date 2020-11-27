@@ -116,3 +116,19 @@ public class EncounterProbability {
     }
 
     private Set<Integer> getIntersection(List<Integer> l1, List<Integer> l2) {
+        l1.retainAll(l2);
+        return new HashSet<>(l1);
+    }
+
+    private Set<Integer> getUnionSet(List<Integer> l1, List<Integer> l2) {
+        Set<Integer> unionSet = new HashSet<Integer>(l1);
+        unionSet.addAll(l2);
+        return unionSet;
+    }
+
+    public static void main(String[] args) {
+        EncounterProbability probability = new EncounterProbability(DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER),
+                DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT, ExperimentConstants.DEFAULT_USER_NUMBER));
+        List<Integer> tie = probability.getSocialTie(1);
+        log.info(tie.toString());
+        List<Integer> tie1 = probability.getSocialTie(2);
