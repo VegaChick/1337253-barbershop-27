@@ -101,3 +101,18 @@ public class EncounterProbability {
 
     private double getTieRelevance(int userId1, int userId2) {
         List<Integer> ties1 = getSocialTie(userId1);
+        List<Integer> ties2 = getSocialTie(userId2);
+        return getIntersection(ties1, ties2).size() * 1.0 / getUnionSet(ties1, ties2).size();
+    }
+
+    private List<Integer> getSocialTie(int userId) {
+        List<Integer> ties = new ArrayList<Integer>();
+        for (int i = 0; i < trustMat[0].length; i++) {
+            if (trustMat[userId - 1][i] == 1) {
+                ties.add(i + 1);
+            }
+        }
+        return ties;
+    }
+
+    private Set<Integer> getIntersection(List<Integer> l1, List<Integer> l2) {
