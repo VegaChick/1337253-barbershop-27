@@ -132,3 +132,16 @@ public class EncounterProbability {
         List<Integer> tie = probability.getSocialTie(1);
         log.info(tie.toString());
         List<Integer> tie1 = probability.getSocialTie(2);
+        log.info(tie1.toString());
+
+        Set<Integer> unionSet = probability.getUnionSet(tie, tie1);
+        log.info("union set is {}",unionSet.toString());
+
+        Set<Integer> intersection = probability.getIntersection(tie, tie1);
+        log.info("intersection is {}", intersection);
+
+        double[][] encounterMatrix = probability.getEncounterMatrix(ExperimentConstants.DEFAULT_WEIGHT1,
+                ExperimentConstants.DEFAULT_WEIGHT2);
+        log.info(Arrays.deepToString(encounterMatrix));
+    }
+}
