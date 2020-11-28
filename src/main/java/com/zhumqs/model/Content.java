@@ -3,4 +3,5 @@ package com.zhumqs.model;
 import lombok.Data;
 
 /**
- * @author
+ * @author mingqizhu
+ * @date 20200
