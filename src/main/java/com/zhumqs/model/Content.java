@@ -1,3 +1,6 @@
 package com.zhumqs.model;
 
-import lombok.
+import lombok.Data;
+
+/**
+ * @author
