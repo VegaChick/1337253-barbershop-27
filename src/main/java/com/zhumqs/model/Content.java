@@ -7,4 +7,4 @@ import lombok.Data;
  * @date 20200103
  */
 @Data
-pu
+public class Conten
