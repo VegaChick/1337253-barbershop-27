@@ -9,4 +9,4 @@ import lombok.Data;
 @Data
 public class Content {
     private Integer contentId;
-    pr
+    private Integer size;
