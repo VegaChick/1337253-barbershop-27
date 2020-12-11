@@ -10,3 +10,4 @@ import lombok.Data;
 public class Content {
     private Integer contentId;
     private Integer size;
+    private Double
