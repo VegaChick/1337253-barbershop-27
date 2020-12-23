@@ -5,4 +5,4 @@ import com.zhumqs.encounter.EncounterProbability;
 import com.zhumqs.model.Content;
 import com.zhumqs.model.MobileUser;
 import com.zhumqs.utils.DataMockUtils;
-im
+import lombok.Data
