@@ -21,4 +21,5 @@ import java.util.stream.Collectors;
 @Slf4j
 @Data
 public class FairCache {
-    private in
+    private int userNumber;
+    p
