@@ -20,4 +20,4 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 @Data
-public cl
+public class FairCache 
