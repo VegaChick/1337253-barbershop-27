@@ -22,4 +22,4 @@ import java.util.stream.Collectors;
 @Data
 public class FairCache {
     private int userNumber;
-    p
+    private int content
