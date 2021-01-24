@@ -25,4 +25,4 @@ public class FairCache {
     private int contentNumber;
     private int capacity;
     private List<MobileUser> users;
-    pr
+    private List<Content> conten
