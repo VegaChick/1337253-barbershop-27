@@ -26,4 +26,6 @@ public class FairCache {
     private int capacity;
     private List<MobileUser> users;
     private List<Content> contents;
-    private in
+    private int[][] trustMat;
+
+    priva
