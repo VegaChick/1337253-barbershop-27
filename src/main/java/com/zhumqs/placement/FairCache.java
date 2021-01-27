@@ -29,4 +29,4 @@ public class FairCache {
     private int[][] trustMat;
 
     private Map<Integer, List<Integer>> cacheMap;
-    private Map<Integ
+    private Map<Integer, List<Integer>> pl
