@@ -31,4 +31,4 @@ public class FairCache {
     private Map<Integer, List<Integer>> cacheMap;
     private Map<Integer, List<Integer>> placementMap;
 
-    public FairCache(List<MobileUser> 
+    public FairCache(List<MobileUser> users, List<Content> cont
