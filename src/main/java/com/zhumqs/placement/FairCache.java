@@ -32,4 +32,4 @@ public class FairCache {
     private Map<Integer, List<Integer>> placementMap;
 
     public FairCache(List<MobileUser> users, List<Content> contents, int capacity, int[][] trustMat) {
-  
+        this.users = 
