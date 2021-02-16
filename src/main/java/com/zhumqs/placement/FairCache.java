@@ -33,4 +33,4 @@ public class FairCache {
 
     public FairCache(List<MobileUser> users, List<Content> contents, int capacity, int[][] trustMat) {
         this.users = users;
-        this.conte
+        this.contents = content
