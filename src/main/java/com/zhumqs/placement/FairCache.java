@@ -35,4 +35,5 @@ public class FairCache {
         this.users = users;
         this.contents = contents;
         this.capacity = capacity;
-        this.trustMat =
+        this.trustMat = trustMat;
+        t
