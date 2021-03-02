@@ -38,4 +38,5 @@ public class FairCache {
         this.trustMat = trustMat;
         this.userNumber = users.size();
         this.contentNumber = contents.size();
-        this.cacheMap = new HashMap<
+        this.cacheMap = new HashMap<>();
+        this.pla
