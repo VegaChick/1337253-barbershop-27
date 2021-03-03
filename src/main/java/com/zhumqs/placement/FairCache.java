@@ -39,4 +39,4 @@ public class FairCache {
         this.userNumber = users.size();
         this.contentNumber = contents.size();
         this.cacheMap = new HashMap<>();
-        this.pla
+        this.placementMap 
