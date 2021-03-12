@@ -40,4 +40,6 @@ public class FairCache {
         this.contentNumber = contents.size();
         this.cacheMap = new HashMap<>();
         this.placementMap = new HashMap<>();
-   
+    }
+
+    private void initC
