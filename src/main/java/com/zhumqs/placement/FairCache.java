@@ -42,4 +42,4 @@ public class FairCache {
         this.placementMap = new HashMap<>();
     }
 
-    private void initC
+    private void initCacheStrategy
