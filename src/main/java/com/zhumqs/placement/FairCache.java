@@ -43,4 +43,4 @@ public class FairCache {
     }
 
     private void initCacheStrategy() {
-        List<C
+        List<Content> sortedContents = c
