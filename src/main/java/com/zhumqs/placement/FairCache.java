@@ -43,4 +43,4 @@ public class FairCache {
     }
 
     private void initCacheStrategy() {
-        List<Content> sortedContents = c
+        List<Content> sortedContents = contents.stream().sorted
