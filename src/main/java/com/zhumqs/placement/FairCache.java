@@ -44,4 +44,5 @@ public class FairCache {
 
     private void initCacheStrategy() {
         List<Content> sortedContents = contents.stream().sorted((u1, u2)
-                -> u2.getPopularity().compareTo(u1.getPopularity())).collect(C
+                -> u2.getPopularity().compareTo(u1.getPopularity())).collect(Collectors.toList());
+   
