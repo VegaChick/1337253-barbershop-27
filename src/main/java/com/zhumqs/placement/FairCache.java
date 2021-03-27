@@ -48,4 +48,5 @@ public class FairCache {
         int totalCacheCapacity  = capacity * userNumber;
         List<Integer> cachedContentIds = new ArrayList<>();
 
-        for (int i = 0; i < totalCacheCap
+        for (int i = 0; i < totalCacheCapacity; i++) {
+         
