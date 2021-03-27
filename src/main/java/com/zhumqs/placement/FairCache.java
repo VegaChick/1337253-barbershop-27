@@ -46,4 +46,6 @@ public class FairCache {
         List<Content> sortedContents = contents.stream().sorted((u1, u2)
                 -> u2.getPopularity().compareTo(u1.getPopularity())).collect(Collectors.toList());
         int totalCacheCapacity  = capacity * userNumber;
-        List<Integer> cachedContentIds = new A
+        List<Integer> cachedContentIds = new ArrayList<>();
+
+    
