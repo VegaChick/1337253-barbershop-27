@@ -49,4 +49,5 @@ public class FairCache {
         List<Integer> cachedContentIds = new ArrayList<>();
 
         for (int i = 0; i < totalCacheCapacity; i++) {
-            if (i >= cont
+            if (i >= contentNumber) {
+             
