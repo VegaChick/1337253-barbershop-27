@@ -50,4 +50,6 @@ public class FairCache {
 
         for (int i = 0; i < totalCacheCapacity; i++) {
             if (i >= contentNumber) {
-             
+                break;
+            }
+ 
