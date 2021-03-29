@@ -53,4 +53,4 @@ public class FairCache {
                 break;
             }
             int contentId = sortedContents.get(i).getContentId();
-            cache
+            cachedContentIds.add(cont
