@@ -52,4 +52,4 @@ public class FairCache {
             if (i >= contentNumber) {
                 break;
             }
-            int contentId = sortedContents.get(
+            int contentId = sortedContents.get(i).getContentI
