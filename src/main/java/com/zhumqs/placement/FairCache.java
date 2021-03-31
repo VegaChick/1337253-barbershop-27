@@ -57,4 +57,4 @@ public class FairCache {
         }
 
         // cacheMap
-        Lis
+        List<Integer> cachedUserId
