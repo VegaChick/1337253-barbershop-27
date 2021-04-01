@@ -57,4 +57,5 @@ public class FairCache {
         }
 
         // cacheMap
-        List<Integer> cachedUserId
+        List<Integer> cachedUserIds = new ArrayList<>();
+   
