@@ -58,4 +58,4 @@ public class FairCache {
 
         // cacheMap
         List<Integer> cachedUserIds = new ArrayList<>();
-   
+        for (int i = 1; i
