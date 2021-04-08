@@ -60,4 +60,5 @@ public class FairCache {
         List<Integer> cachedUserIds = new ArrayList<>();
         for (int i = 1; i <= userNumber; i++) {
             cacheMap.put(i, cachedContentIds);
-            cached
+            cachedUserIds.add(i);
+    
