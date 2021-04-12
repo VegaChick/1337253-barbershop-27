@@ -63,4 +63,5 @@ public class FairCache {
             cachedUserIds.add(i);
         }
         // placementMap
-        for (int i : c
+        for (int i : cachedContentIds) {
+    
