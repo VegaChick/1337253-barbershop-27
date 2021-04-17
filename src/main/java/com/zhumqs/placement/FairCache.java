@@ -68,4 +68,4 @@ public class FairCache {
         }
     }
 
-    
+    public double getCa
