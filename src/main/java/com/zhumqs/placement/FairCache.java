@@ -68,4 +68,5 @@ public class FairCache {
         }
     }
 
-    public double getCa
+    public double getCacheHitRatio() {
+        initCac
