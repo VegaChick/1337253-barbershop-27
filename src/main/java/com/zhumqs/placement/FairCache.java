@@ -69,4 +69,5 @@ public class FairCache {
     }
 
     public double getCacheHitRatio() {
-        initCac
+        initCacheStrategy();
+     
