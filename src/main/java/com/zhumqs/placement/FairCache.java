@@ -70,4 +70,4 @@ public class FairCache {
 
     public double getCacheHitRatio() {
         initCacheStrategy();
-        EncounterProbability encounterProbability = new Encou
+        EncounterProbability encounterProbability = new EncounterProbability
