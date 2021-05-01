@@ -71,4 +71,4 @@ public class FairCache {
     public double getCacheHitRatio() {
         initCacheStrategy();
         EncounterProbability encounterProbability = new EncounterProbability(users, trustMat);
-        double[][] en
+        double[][] encounterMat = encounterP
