@@ -74,4 +74,4 @@ public class FairCache {
         double[][] encounterMat = encounterProbability.getEncounterMatrix(ExperimentConstants.DEFAULT_WEIGHT1,
                 ExperimentConstants.DEFAULT_WEIGHT2);
 
-        dou
+        double d1 = 0.0, d2 
