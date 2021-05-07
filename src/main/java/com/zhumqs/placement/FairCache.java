@@ -72,4 +72,6 @@ public class FairCache {
         initCacheStrategy();
         EncounterProbability encounterProbability = new EncounterProbability(users, trustMat);
         double[][] encounterMat = encounterProbability.getEncounterMatrix(ExperimentConstants.DEFAULT_WEIGHT1,
-                ExperimentConstants.DEFAULT_WEIGHT
+                ExperimentConstants.DEFAULT_WEIGHT2);
+
+        dou
