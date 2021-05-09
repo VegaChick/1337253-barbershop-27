@@ -75,4 +75,5 @@ public class FairCache {
                 ExperimentConstants.DEFAULT_WEIGHT2);
 
         double d1 = 0.0, d2 = 0.0;
-        for (int i = 0; i < userNu
+        for (int i = 0; i < userNumber; i++) {
+       
