@@ -77,4 +77,4 @@ public class FairCache {
         double d1 = 0.0, d2 = 0.0;
         for (int i = 0; i < userNumber; i++) {
             List<Integer> cachedContentIds = cacheMap.get(i + 1);
-            
+            for (int j = 0; j
