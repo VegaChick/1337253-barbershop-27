@@ -79,4 +79,4 @@ public class FairCache {
             List<Integer> cachedContentIds = cacheMap.get(i + 1);
             for (int j = 0; j < contentNumber; j++) {
                 double requestProbability = contents.get(j).getPopularity();
-                d
+                d2 += requestProbability;
