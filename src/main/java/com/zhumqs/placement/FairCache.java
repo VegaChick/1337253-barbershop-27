@@ -80,4 +80,4 @@ public class FairCache {
             for (int j = 0; j < contentNumber; j++) {
                 double requestProbability = contents.get(j).getPopularity();
                 d2 += requestProbability;
-                if (cachedContentIds.
+                if (cachedContentIds.contains(j + 1
