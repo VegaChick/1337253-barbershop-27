@@ -81,4 +81,4 @@ public class FairCache {
                 double requestProbability = contents.get(j).getPopularity();
                 d2 += requestProbability;
                 if (cachedContentIds.contains(j + 1)) {
-           
+                    // 计算与其他缓存用户
