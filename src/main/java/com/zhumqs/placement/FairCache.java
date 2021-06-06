@@ -82,4 +82,5 @@ public class FairCache {
                 d2 += requestProbability;
                 if (cachedContentIds.contains(j + 1)) {
                     // 计算与其他缓存用户的平均遭遇概率
-                    double totalEncounter = 
+                    double totalEncounter = 0.0;
+       
