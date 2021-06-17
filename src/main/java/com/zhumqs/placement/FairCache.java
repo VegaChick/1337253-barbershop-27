@@ -86,4 +86,5 @@ public class FairCache {
                     for (int k = 0; k < userNumber; k++) {
                         if (i != k) {
                             totalEncounter += encounterMat[i][k];
-               
+                        }
+    
