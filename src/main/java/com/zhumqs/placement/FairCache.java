@@ -88,3 +88,4 @@ public class FairCache {
                             totalEncounter += encounterMat[i][k];
                         }
                     }
+                    
