@@ -88,4 +88,5 @@ public class FairCache {
                             totalEncounter += encounterMat[i][k];
                         }
                     }
-                    double averageEncounter = totalEncounter 
+                    double averageEncounter = totalEncounter / (userNumber - 1);
+             
