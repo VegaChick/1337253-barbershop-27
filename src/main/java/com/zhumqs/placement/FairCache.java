@@ -89,4 +89,4 @@ public class FairCache {
                         }
                     }
                     double averageEncounter = totalEncounter / (userNumber - 1);
-             
+                    d1 +=
