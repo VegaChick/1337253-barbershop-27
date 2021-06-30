@@ -89,4 +89,6 @@ public class FairCache {
                         }
                     }
                     double averageEncounter = totalEncounter / (userNumber - 1);
-                    d1 += averageEncounter * requestProb
+                    d1 += averageEncounter * requestProbability;
+                }
+   
