@@ -94,4 +94,7 @@ public class FairCache {
             }
         }
 
-        return d1 
+        return d1 / d2;
+    }
+
+    public 
