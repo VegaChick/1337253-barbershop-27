@@ -97,4 +97,4 @@ public class FairCache {
         return d1 / d2;
     }
 
-    public 
+    public static void main(Stri
