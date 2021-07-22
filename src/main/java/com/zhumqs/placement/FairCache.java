@@ -101,4 +101,4 @@ public class FairCache {
         List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER);
         List<Content> contents = DataMockUtils.mockContents(5000);
         int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT, ExperimentConstants.DEFAULT_USER_NUMBER);
-        FairCache fairCache = new FairCache(users, contents, ExperimentConstants
+        FairCache fairCache = new FairCache(users, contents, ExperimentConstants.DEVICE_CAPACI
