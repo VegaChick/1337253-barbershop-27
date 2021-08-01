@@ -103,4 +103,6 @@ public class FairCache {
         int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT, ExperimentConstants.DEFAULT_USER_NUMBER);
         FairCache fairCache = new FairCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
         double cacheHitRatio = fairCache.getCacheHitRatio();
-        log.info("Cache hit ratio of fair caching is: {}" ,cacheHi
+        log.info("Cache hit ratio of fair caching is: {}" ,cacheHitRatio);
+    }
+}
