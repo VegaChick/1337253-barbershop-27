@@ -41,3 +41,25 @@ public class FullCooperativeCaching {
                                   int[][] trustMat) {
         this.weight1 = weight1;
         this.weight2 = weight2;
+        this.capacity = capacity;
+        this.users = users;
+        this.contents = contents;
+        this.userNumber = users.size();
+        this.contentNumber = contents.size();
+        this.trustMat = trustMat;
+        this.cacheMap = new HashMap<>();
+        this.placementMap = new HashMap<>();
+    }
+
+    private void initCacheStrategy() {
+        this.expectationMat = getExpectationMatrix();
+        for (int i = 0; i <  contentNumber; i++) {
+            double maxExpectation = Double.MIN_VALUE;
+            int cacheUserId = 0;
+            for (int j = 0; j < userNumber; j++) {
+                if (expectationMat[j][i] > maxExpectation ) {
+                    List<Integer> list = cacheMap.get(j + 1);
+                    if (list == null || list.size() < capacity) {
+                        cacheUserId = j + 1;
+                        maxExpectation = expectationMat[j][i];
+                    }
