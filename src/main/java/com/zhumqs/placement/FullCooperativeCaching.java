@@ -63,3 +63,29 @@ public class FullCooperativeCaching {
                         cacheUserId = j + 1;
                         maxExpectation = expectationMat[j][i];
                     }
+                }
+            }
+            if (cacheUserId != 0) {
+                List<Integer> cachedContents = cacheMap.get(cacheUserId);
+                if (cachedContents == null) {
+                    cachedContents = new ArrayList<Integer>();
+                }
+                cachedContents.add(i + 1);
+                cacheMap.put(cacheUserId, cachedContents);
+                placementMap.put(i + 1, cacheUserId);
+            }
+        }
+    }
+
+    private double[][] getExpectationMatrix() {
+        EncounterProbability encounterProbability = new EncounterProbability(users, trustMat);
+        this.encounterMat = encounterProbability.getEncounterMatrix(weight1, weight2);
+
+        RequestProbability requestProbability = new RequestProbability(users, contents);
+        this.requestProbabilityMat = requestProbability.getRequestProbabilityMatrix();
+
+        double[][] expectationMat = new double[userNumber][contentNumber];
+        for (int i = 0; i < userNumber; i++) {
+            for (int j = 0; j < contentNumber; j++) {
+                double expectation = 0.0;
+                for (int k = 0; k < userNumber; k++) {
