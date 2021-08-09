@@ -89,3 +89,23 @@ public class FullCooperativeCaching {
             for (int j = 0; j < contentNumber; j++) {
                 double expectation = 0.0;
                 for (int k = 0; k < userNumber; k++) {
+                    if (i != k) {
+                        expectation += encounterMat[i][k] * requestProbabilityMat[i][j];
+                    }
+                }
+                expectationMat[i][j] = expectation;
+            }
+        }
+        return expectationMat;
+    }
+
+    /**
+     *  如何计算缓存命中率?
+     *
+      */
+    double getCacheHitRatio() {
+        initCacheStrategy();
+        double d1 = 0.0, d2 = 0.0;
+        for (int i = 1; i <= userNumber; i++) {
+            for (int j = 1; j <= contentNumber; j++) {
+                double requestProbability = requestProbabilityMat[i - 1][j - 1];
