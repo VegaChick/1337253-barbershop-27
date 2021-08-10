@@ -109,3 +109,25 @@ public class FullCooperativeCaching {
         for (int i = 1; i <= userNumber; i++) {
             for (int j = 1; j <= contentNumber; j++) {
                 double requestProbability = requestProbabilityMat[i - 1][j - 1];
+                if (placementMap.containsKey(j)) {
+                    int cachedUserId = placementMap.get(j);
+                    double encounterProbability = encounterMat[i - 1][cachedUserId - 1];
+                    d1 += requestProbability * encounterProbability;
+                }
+                d2 += requestProbability;
+            }
+        }
+        return d1 / d2;
+    }
+
+    public static void main(String[] args) {
+        List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER);
+        List<Content> contents = DataMockUtils.mockContents(ExperimentConstants.DEFAULT_CONTENT_NUMBER);
+        int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT,
+                ExperimentConstants.DEFAULT_USER_NUMBER);
+        FullCooperativeCaching placement = new FullCooperativeCaching(ExperimentConstants.DEFAULT_WEIGHT1,
+                ExperimentConstants.DEFAULT_WEIGHT2,
+                ExperimentConstants.DEVICE_CAPACITY,
+                users, contents, trustMat);
+        double cacheHitRatio = placement.getCacheHitRatio();
+        log.info(String.valueOf(cacheHitRatio));
