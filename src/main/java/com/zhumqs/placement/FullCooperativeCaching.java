@@ -131,3 +131,6 @@ public class FullCooperativeCaching {
                 users, contents, trustMat);
         double cacheHitRatio = placement.getCacheHitRatio();
         log.info(String.valueOf(cacheHitRatio));
+    }
+
+}
