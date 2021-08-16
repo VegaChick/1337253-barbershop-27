@@ -64,3 +64,23 @@ public class PopularCache {
                 cachedContentIds.add(contentId);
                 placementMap.put(contentId, i);
                 index++;
+            }
+            cacheMap.put(i, cachedContentIds);
+        }
+    }
+
+    public double getCacheHitRatio() {
+        initCacheStrategy();
+        EncounterProbability encounterProbability = new EncounterProbability(users, trustMat);
+        double[][] encounterMat = encounterProbability.getEncounterMatrix(ExperimentConstants.DEFAULT_WEIGHT1,
+                ExperimentConstants.DEFAULT_WEIGHT2);
+
+        double d1 = 0.0, d2 = 0.0;
+        for (int i = 1; i <= userNumber; i++) {
+            for (int j = 1; j <= contentNumber; j++) {
+                double requestProbability = contents.get(j - 1).getPopularity();
+                if (placementMap.containsKey(j)) {
+                    int cachedUserId = placementMap.get(j);
+                    double encounter = encounterMat[i - 1][cachedUserId - 1];
+                    d1 += encounter * requestProbability;
+                }
