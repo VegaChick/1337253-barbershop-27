@@ -48,3 +48,19 @@ public class PopularCache {
                 -> u2.getPopularity().compareTo(u1.getPopularity())).collect(Collectors.toList());
 
         // 每个用户尽可能多的缓存流行内容
+        int index = 0;
+        for (int i = 1; i <= userNumber; i++) {
+            // 缓存足够且有剩余
+            if (index >= sortedContents.size()) {
+                break;
+            }
+            List<Integer> cachedContentIds = new ArrayList<>();
+            for (int j = 0; j < capacity; j++) {
+                // 缓存足够且有剩余
+                if (index >= sortedContents.size()) {
+                    break;
+                }
+                int contentId = sortedContents.get(index).getContentId();
+                cachedContentIds.add(contentId);
+                placementMap.put(contentId, i);
+                index++;
