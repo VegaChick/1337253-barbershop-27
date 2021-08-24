@@ -84,3 +84,19 @@ public class PopularCache {
                     double encounter = encounterMat[i - 1][cachedUserId - 1];
                     d1 += encounter * requestProbability;
                 }
+                d2 += requestProbability;
+            }
+        }
+        return d1 / d2;
+    }
+
+    public static void main(String[] args) {
+        List<Content> contents = DataMockUtils.mockContents(ExperimentConstants.DEFAULT_CONTENT_NUMBER);
+        List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER);
+        int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT, ExperimentConstants.DEFAULT_USER_NUMBER);
+        PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
+        popularCache.initCacheStrategy();
+        double cacheHitRatio = popularCache.getCacheHitRatio();
+        log.info("Cache hit ratio of popular caching is: {}" ,cacheHitRatio);
+    }
+}
