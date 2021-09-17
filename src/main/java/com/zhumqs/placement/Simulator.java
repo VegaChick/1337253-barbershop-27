@@ -14,4 +14,6 @@ import java.util.List;
  * @author mingqizhu
  * @date 20200105
  */
-@Sl
+@Slf4j
+@Data
+public c
