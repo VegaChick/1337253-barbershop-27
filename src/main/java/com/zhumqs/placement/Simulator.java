@@ -18,4 +18,4 @@ import java.util.List;
 @Data
 public class Simulator {
 
-    private static void t
+    private static void testSocialImpact()
