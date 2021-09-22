@@ -18,4 +18,6 @@ import java.util.List;
 @Data
 public class Simulator {
 
-    private static void testSocialImpact()
+    private static void testSocialImpact() {
+
+        log.info("<------
