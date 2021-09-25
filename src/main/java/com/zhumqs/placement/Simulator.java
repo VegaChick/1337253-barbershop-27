@@ -20,4 +20,4 @@ public class Simulator {
 
     private static void testSocialImpact() {
 
-        log.info("<------
+        log.info("<------Impact of social relation-----
