@@ -21,4 +21,4 @@ public class Simulator {
     private static void testSocialImpact() {
 
         log.info("<------Impact of social relation------>");
-        List<MobileUser> users
+        List<MobileUser> users = DataMockUtils.m
