@@ -21,4 +21,4 @@ public class Simulator {
     private static void testSocialImpact() {
 
         log.info("<------Impact of social relation------>");
-        List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentCo
+        List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_
