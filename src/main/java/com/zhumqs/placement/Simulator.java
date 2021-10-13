@@ -22,4 +22,4 @@ public class Simulator {
 
         log.info("<------Impact of social relation------>");
         List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER);
-      
+        List<Content> con
