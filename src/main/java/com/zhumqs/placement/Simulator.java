@@ -24,4 +24,4 @@ public class Simulator {
         List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER);
         List<Content> contents = DataMockUtils.mockContents(ExperimentConstants.DEFAULT_CONTENT_NUMBER);
 
-        List<Double> cacheHitRatioForFu
+        List<Double> cacheHitRatioForFullCooperation = new Ar
