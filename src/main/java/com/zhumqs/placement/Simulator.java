@@ -29,4 +29,5 @@ public class Simulator {
         List<Double> cacheHitRatioForFair = new ArrayList<>();
 
         for (int i = 1; i <= 10; i++) {
-            double socialWeight
+            double socialWeight = i * 1.0 / 10;
+ 
