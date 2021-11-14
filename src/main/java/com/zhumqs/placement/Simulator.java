@@ -30,4 +30,5 @@ public class Simulator {
 
         for (int i = 1; i <= 10; i++) {
             double socialWeight = i * 1.0 / 10;
-            int[][] trustMat = DataMockUtils.mockTrustRelationship(soci
+            int[][] trustMat = DataMockUtils.mockTrustRelationship(socialWeight,
+    
