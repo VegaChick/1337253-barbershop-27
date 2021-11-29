@@ -35,4 +35,4 @@ public class Simulator {
 
             FullCooperativeCaching fullCooperativeCaching = new FullCooperativeCaching(ExperimentConstants.DEFAULT_WEIGHT1,
                     ExperimentConstants.DEFAULT_WEIGHT2,
-                    E
+                    ExperimentConstants
