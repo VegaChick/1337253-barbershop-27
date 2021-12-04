@@ -36,4 +36,5 @@ public class Simulator {
             FullCooperativeCaching fullCooperativeCaching = new FullCooperativeCaching(ExperimentConstants.DEFAULT_WEIGHT1,
                     ExperimentConstants.DEFAULT_WEIGHT2,
                     ExperimentConstants.DEVICE_CAPACITY,
-                    users, contents,
+                    users, contents, trustMat);
+   
