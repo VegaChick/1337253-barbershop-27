@@ -38,4 +38,4 @@ public class Simulator {
                     ExperimentConstants.DEVICE_CAPACITY,
                     users, contents, trustMat);
             double d1 = fullCooperativeCaching.getCacheHitRatio();
-    
+            cacheHi
