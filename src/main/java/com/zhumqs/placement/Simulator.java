@@ -41,4 +41,4 @@ public class Simulator {
             cacheHitRatioForFullCooperation.add(d1);
             log.info("ProposedCaching: Social relation: {}, cache hit ratio: {} ", socialWeight, d1);
 
-      
+            PopularCache p
