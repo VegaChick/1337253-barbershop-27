@@ -41,4 +41,5 @@ public class Simulator {
             cacheHitRatioForFullCooperation.add(d1);
             log.info("ProposedCaching: Social relation: {}, cache hit ratio: {} ", socialWeight, d1);
 
-            PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat
+            PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
+            dou
