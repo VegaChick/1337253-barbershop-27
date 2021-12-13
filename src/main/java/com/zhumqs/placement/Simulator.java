@@ -42,4 +42,4 @@ public class Simulator {
             log.info("ProposedCaching: Social relation: {}, cache hit ratio: {} ", socialWeight, d1);
 
             PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
-            dou
+            double d2 = popularCache.
