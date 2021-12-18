@@ -44,4 +44,6 @@ public class Simulator {
             PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
             double d2 = popularCache.getCacheHitRatio();
             cacheHitRatioForPopular.add(d2);
-            log.info("PopularCaching: Social relation: {}, cache hit ratio: {} ", s
+            log.info("PopularCaching: Social relation: {}, cache hit ratio: {} ", socialWeight, d2);
+
+  
