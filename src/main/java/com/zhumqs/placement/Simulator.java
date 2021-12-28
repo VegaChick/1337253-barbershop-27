@@ -47,4 +47,4 @@ public class Simulator {
             log.info("PopularCaching: Social relation: {}, cache hit ratio: {} ", socialWeight, d2);
 
             FairCache fairCache = new FairCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
-         
+            double d3 = fairCache.getC
