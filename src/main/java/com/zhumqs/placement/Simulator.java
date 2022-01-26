@@ -52,4 +52,6 @@ public class Simulator {
             log.info("FairCaching: Social relation: {}, cache hit ratio: {} ", socialWeight, d3);
             log.info("");
 
-      
+        }
+
+        log.
