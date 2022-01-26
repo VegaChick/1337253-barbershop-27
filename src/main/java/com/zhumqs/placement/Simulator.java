@@ -54,4 +54,4 @@ public class Simulator {
 
         }
 
-        log.
+        log.info("ProposedC
