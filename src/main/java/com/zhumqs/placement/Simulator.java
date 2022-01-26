@@ -54,4 +54,4 @@ public class Simulator {
 
         }
 
-        log.info("ProposedC
+        log.info("ProposedCache: {}", cacheHitRati
