@@ -50,4 +50,6 @@ public class Simulator {
             double d3 = fairCache.getCacheHitRatio();
             cacheHitRatioForFair.add(d3);
             log.info("FairCaching: Social relation: {}, cache hit ratio: {} ", socialWeight, d3);
-            
+            log.info("");
+
+      
