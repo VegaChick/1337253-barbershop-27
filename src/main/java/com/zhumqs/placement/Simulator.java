@@ -54,4 +54,5 @@ public class Simulator {
 
         }
 
-        log.info("ProposedCache: {}", cacheHitRatioForFullCooperation.toS
+        log.info("ProposedCache: {}", cacheHitRatioForFullCooperation.toString());
+    
