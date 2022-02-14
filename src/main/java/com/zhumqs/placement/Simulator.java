@@ -55,4 +55,4 @@ public class Simulator {
         }
 
         log.info("ProposedCache: {}", cacheHitRatioForFullCooperation.toString());
-        log.info("PopularCache: {}", cac
+        log.info("PopularCache: {}", cacheHitRatioForPopular
