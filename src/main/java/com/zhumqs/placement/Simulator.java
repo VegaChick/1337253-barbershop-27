@@ -60,4 +60,4 @@ public class Simulator {
 
     }
 
-    priva
+    private static void t
