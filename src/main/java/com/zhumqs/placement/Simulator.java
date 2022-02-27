@@ -62,4 +62,4 @@ public class Simulator {
 
     private static void testUserNumberImpact() {
 
-        log.info("<------Impact o
+        log.info("<------Impact of user number--
