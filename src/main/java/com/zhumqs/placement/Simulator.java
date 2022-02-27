@@ -60,4 +60,4 @@ public class Simulator {
 
     }
 
-    private static void t
+    private static void testUserNumberImpact()
