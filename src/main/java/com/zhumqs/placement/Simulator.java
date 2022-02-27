@@ -60,4 +60,6 @@ public class Simulator {
 
     }
 
-    private static void testUserNumberImpact()
+    private static void testUserNumberImpact() {
+
+        log.i
