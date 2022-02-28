@@ -63,4 +63,4 @@ public class Simulator {
     private static void testUserNumberImpact() {
 
         log.info("<------Impact of user number------>");
-        L
+        List<Content> contents =
