@@ -63,4 +63,6 @@ public class Simulator {
     private static void testUserNumberImpact() {
 
         log.info("<------Impact of user number------>");
-        List<Content> contents = DataMockUtils.mockContents(ExperimentConstants.DEFAULT_CONTENT_NUMBER
+        List<Content> contents = DataMockUtils.mockContents(ExperimentConstants.DEFAULT_CONTENT_NUMBER);
+
+        List<Double> cac
