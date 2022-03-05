@@ -66,4 +66,4 @@ public class Simulator {
         List<Content> contents = DataMockUtils.mockContents(ExperimentConstants.DEFAULT_CONTENT_NUMBER);
 
         List<Double> cacheHitRatioForFullCooperation = new ArrayList<>();
-   
+        List<Double> cach
