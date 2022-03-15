@@ -70,4 +70,4 @@ public class Simulator {
         List<Double> cacheHitRatioForFair = new ArrayList<>();
 
         for (int i = 10; i <= 100; i += 10) {
-            List<MobileUser> users = 
+            List<MobileUser> users = DataMockUtils.mockU
