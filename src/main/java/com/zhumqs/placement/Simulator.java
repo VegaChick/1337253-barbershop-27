@@ -71,4 +71,5 @@ public class Simulator {
 
         for (int i = 10; i <= 100; i += 10) {
             List<MobileUser> users = DataMockUtils.mockUserInfo(i);
-            int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_W
+            int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT, i);
+            
