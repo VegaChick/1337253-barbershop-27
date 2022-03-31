@@ -74,4 +74,4 @@ public class Simulator {
             int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT, i);
             FullCooperativeCaching fullCooperativeCaching = new FullCooperativeCaching(ExperimentConstants.DEFAULT_WEIGHT1,
                     ExperimentConstants.DEFAULT_WEIGHT2,
-        
+                    ExperimentCo
