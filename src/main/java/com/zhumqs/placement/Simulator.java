@@ -78,3 +78,4 @@ public class Simulator {
                     users, contents, trustMat);
             double d1 = fullCooperativeCaching.getCacheHitRatio();
             cacheHitRatioForFullCooperation.add(d1);
+            l
