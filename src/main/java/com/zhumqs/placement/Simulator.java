@@ -78,4 +78,6 @@ public class Simulator {
                     users, contents, trustMat);
             double d1 = fullCooperativeCaching.getCacheHitRatio();
             cacheHitRatioForFullCooperation.add(d1);
-            log.info("ProposedCaching: User number: {}, cache hit ratio: {} ", i, d1)
+            log.info("ProposedCaching: User number: {}, cache hit ratio: {} ", i, d1);
+
+            PopularCache po
