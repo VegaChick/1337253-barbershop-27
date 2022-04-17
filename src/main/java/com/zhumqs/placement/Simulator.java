@@ -80,4 +80,4 @@ public class Simulator {
             cacheHitRatioForFullCooperation.add(d1);
             log.info("ProposedCaching: User number: {}, cache hit ratio: {} ", i, d1);
 
-            PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DE
+            PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat
