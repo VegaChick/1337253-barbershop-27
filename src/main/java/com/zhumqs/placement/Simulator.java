@@ -83,4 +83,4 @@ public class Simulator {
             PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
             double d2 = popularCache.getCacheHitRatio();
             cacheHitRatioForPopular.add(d2);
-            log.info("PopularCaching: User
+            log.info("PopularCaching: User number: {}, cache hit rat
