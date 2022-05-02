@@ -85,4 +85,4 @@ public class Simulator {
             cacheHitRatioForPopular.add(d2);
             log.info("PopularCaching: User number: {}, cache hit ratio: {} ", i, d2);
 
-            FairCache fairCache = new Fai
+            FairCache fairCache = new FairCache(users, conte
