@@ -86,4 +86,5 @@ public class Simulator {
             log.info("PopularCaching: User number: {}, cache hit ratio: {} ", i, d2);
 
             FairCache fairCache = new FairCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
-            double d3 = fairCache.getCache
+            double d3 = fairCache.getCacheHitRatio();
+   
