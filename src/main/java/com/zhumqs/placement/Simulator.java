@@ -90,4 +90,6 @@ public class Simulator {
             cacheHitRatioForFair.add(d3);
             log.info("FairCaching: User number: {}, cache hit ratio: {} ", i, d3);
             log.info("");
-    
+        }
+
+        log.info(
