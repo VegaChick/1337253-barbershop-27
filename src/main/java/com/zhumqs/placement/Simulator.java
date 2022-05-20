@@ -92,4 +92,4 @@ public class Simulator {
             log.info("");
         }
 
-        log.info("ProposedCache: {}", cacheHitRatioForFul
+        log.info("ProposedCache: {}", cacheHitRatioForFullCooperation.toStrin
