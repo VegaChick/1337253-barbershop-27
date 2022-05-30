@@ -97,4 +97,5 @@ public class Simulator {
         log.info("FairCache: {}", cacheHitRatioForFair.toString());
     }
 
-    private static void testC
+    private static void testContentNumberImpact() {
+  
