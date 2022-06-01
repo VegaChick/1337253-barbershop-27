@@ -98,4 +98,4 @@ public class Simulator {
     }
 
     private static void testContentNumberImpact() {
-        log.info("<
+        log.info("<------Impact of conten
