@@ -99,4 +99,4 @@ public class Simulator {
 
     private static void testContentNumberImpact() {
         log.info("<------Impact of content number------>");
-        List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentCons
+        List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_U
