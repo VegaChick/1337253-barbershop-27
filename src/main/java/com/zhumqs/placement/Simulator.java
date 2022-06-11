@@ -100,4 +100,4 @@ public class Simulator {
     private static void testContentNumberImpact() {
         log.info("<------Impact of content number------>");
         List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER);
-        int[][] trustMat = DataMockUtils.m
+        int[][] trustMat = DataMockUtils.mockTrustRelationship(Expe
