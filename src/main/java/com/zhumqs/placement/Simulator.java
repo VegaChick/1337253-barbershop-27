@@ -102,3 +102,5 @@ public class Simulator {
         List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER);
         int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT,
                 ExperimentConstants.DEFAULT_USER_NUMBER);
+
+        List<Double> cacheH
