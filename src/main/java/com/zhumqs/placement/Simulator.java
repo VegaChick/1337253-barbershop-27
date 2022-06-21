@@ -103,4 +103,5 @@ public class Simulator {
         int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT,
                 ExperimentConstants.DEFAULT_USER_NUMBER);
 
-        List<Double> cacheHitRatioForFullCooperation = new ArrayList<>(
+        List<Double> cacheHitRatioForFullCooperation = new ArrayList<>();
+        List<Dou
