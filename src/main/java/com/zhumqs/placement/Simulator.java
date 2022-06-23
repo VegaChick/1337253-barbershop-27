@@ -105,4 +105,4 @@ public class Simulator {
 
         List<Double> cacheHitRatioForFullCooperation = new ArrayList<>();
         List<Double> cacheHitRatioForPopular = new ArrayList<>();
-    
+        List<Double> cache
