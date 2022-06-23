@@ -104,4 +104,5 @@ public class Simulator {
                 ExperimentConstants.DEFAULT_USER_NUMBER);
 
         List<Double> cacheHitRatioForFullCooperation = new ArrayList<>();
-        List<Double> cacheHitRatioForPopular = new Ar
+        List<Double> cacheHitRatioForPopular = new ArrayList<>();
+    
