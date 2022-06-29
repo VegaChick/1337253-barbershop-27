@@ -107,4 +107,4 @@ public class Simulator {
         List<Double> cacheHitRatioForPopular = new ArrayList<>();
         List<Double> cacheHitRatioForFair = new ArrayList<>();
 
-        for (in
+        for (int i = 50; i <=
