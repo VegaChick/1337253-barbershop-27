@@ -110,4 +110,4 @@ public class Simulator {
         for (int i = 50; i <= 500; i += 50) {
             List<Content> contents = DataMockUtils.mockContents(i);
 
-            FullCooperativeCaching fullCooperativeCaching = new FullCooperativeCaching(Experi
+            FullCooperativeCaching fullCooperativeCaching = new FullCooperativeCaching(ExperimentConstants.DEFAULT_WEI
