@@ -111,4 +111,4 @@ public class Simulator {
             List<Content> contents = DataMockUtils.mockContents(i);
 
             FullCooperativeCaching fullCooperativeCaching = new FullCooperativeCaching(ExperimentConstants.DEFAULT_WEIGHT1,
-                    Experim
+                    ExperimentConstants.DEFAULT_WEIGHT2,
