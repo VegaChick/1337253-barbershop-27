@@ -114,4 +114,5 @@ public class Simulator {
                     ExperimentConstants.DEFAULT_WEIGHT2,
                     ExperimentConstants.DEVICE_CAPACITY,
                     users, contents, trustMat);
-            double d1 = fullCooperativeCaching.getCacheHitRa
+            double d1 = fullCooperativeCaching.getCacheHitRatio();
+            cach
