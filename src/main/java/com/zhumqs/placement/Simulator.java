@@ -119,3 +119,4 @@ public class Simulator {
             log.info("ProposedCaching: Content number: {}, cache hit ratio: {} ", i, d1);
 
             PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
+            
