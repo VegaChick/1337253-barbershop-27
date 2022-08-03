@@ -120,4 +120,5 @@ public class Simulator {
 
             PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
             double d2 = popularCache.getCacheHitRatio();
-            cacheHitRatioForPopular.add(d2)
+            cacheHitRatioForPopular.add(d2);
+            lo
