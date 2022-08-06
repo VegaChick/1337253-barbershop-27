@@ -123,4 +123,4 @@ public class Simulator {
             cacheHitRatioForPopular.add(d2);
             log.info("PopularCaching: Content number: {}, cache hit ratio: {} ", i, d2);
 
- 
+            FairCac
