@@ -125,4 +125,4 @@ public class Simulator {
 
             FairCache fairCache = new FairCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
             double d3 = fairCache.getCacheHitRatio();
-            cacheHitRatioFo
+            cacheHitRatioForFair.add(d3)
