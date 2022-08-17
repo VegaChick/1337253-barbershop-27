@@ -127,4 +127,5 @@ public class Simulator {
             double d3 = fairCache.getCacheHitRatio();
             cacheHitRatioForFair.add(d3);
             log.info("FairCaching: Content number: {}, cache hit ratio: {} ", i, d3);
-            log
+            log.info("");
+        }
