@@ -129,3 +129,5 @@ public class Simulator {
             log.info("FairCaching: Content number: {}, cache hit ratio: {} ", i, d3);
             log.info("");
         }
+
+        log.info("Propos
