@@ -130,4 +130,4 @@ public class Simulator {
             log.info("");
         }
 
-        log.info("Propos
+        log.info("ProposedCache: {}", cacheHitR
