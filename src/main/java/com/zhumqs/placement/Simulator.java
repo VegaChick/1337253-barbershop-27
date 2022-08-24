@@ -132,4 +132,4 @@ public class Simulator {
 
         log.info("ProposedCache: {}", cacheHitRatioForFullCooperation.toString());
         log.info("PopularCache: {}", cacheHitRatioForPopular.toString());
-        
+        log.info("FairC
