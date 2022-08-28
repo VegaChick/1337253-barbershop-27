@@ -135,4 +135,4 @@ public class Simulator {
         log.info("FairCache: {}", cacheHitRatioForFair.toString());
     }
 
-    private st
+    private static void testCap
