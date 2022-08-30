@@ -137,4 +137,4 @@ public class Simulator {
 
     private static void testCapacityImpact() {
 
-  
+        log.info("<-----
