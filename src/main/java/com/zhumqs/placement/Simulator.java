@@ -138,4 +138,5 @@ public class Simulator {
     private static void testCapacityImpact() {
 
         log.info("<------Impact of capacity------>");
-        List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT
+        List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER);
+      
