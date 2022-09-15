@@ -140,4 +140,4 @@ public class Simulator {
         log.info("<------Impact of capacity------>");
         List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER);
         List<Content> contents = DataMockUtils.mockContents(ExperimentConstants.DEFAULT_CONTENT_NUMBER);
-        int[][] trustMat = DataMock
+        int[][] trustMat = DataMockUtils.mockTrustRelati
