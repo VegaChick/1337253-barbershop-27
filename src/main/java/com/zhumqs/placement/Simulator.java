@@ -141,4 +141,5 @@ public class Simulator {
         List<MobileUser> users = DataMockUtils.mockUserInfo(ExperimentConstants.DEFAULT_USER_NUMBER);
         List<Content> contents = DataMockUtils.mockContents(ExperimentConstants.DEFAULT_CONTENT_NUMBER);
         int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT,
-                ExperimentConstants.DEFAULT_
+                ExperimentConstants.DEFAULT_USER_NUMBER);
+
