@@ -143,3 +143,4 @@ public class Simulator {
         int[][] trustMat = DataMockUtils.mockTrustRelationship(ExperimentConstants.DEFAULT_SOCIAL_WEIGHT,
                 ExperimentConstants.DEFAULT_USER_NUMBER);
 
+        for (int i = 
