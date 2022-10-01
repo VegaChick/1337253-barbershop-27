@@ -144,4 +144,4 @@ public class Simulator {
                 ExperimentConstants.DEFAULT_USER_NUMBER);
 
         for (int i = 10; i <= 100; i += 10) {
-            FullCooperativeCaching fullCooperativeCaching = new FullCooperativeCaching(ExperimentCo
+            FullCooperativeCaching fullCooperativeCaching = new FullCooperativeCaching(ExperimentConstants.DEFAULT_WEIG
