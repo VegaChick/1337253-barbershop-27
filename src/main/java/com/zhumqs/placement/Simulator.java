@@ -146,4 +146,5 @@ public class Simulator {
         for (int i = 10; i <= 100; i += 10) {
             FullCooperativeCaching fullCooperativeCaching = new FullCooperativeCaching(ExperimentConstants.DEFAULT_WEIGHT1,
                     ExperimentConstants.DEFAULT_WEIGHT2,
-                    i, users, contents, trustM
+                    i, users, contents, trustMat);
+          
