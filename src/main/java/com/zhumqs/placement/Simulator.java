@@ -150,4 +150,4 @@ public class Simulator {
             log.info("ProposedCaching: Capacity: {}, cache hit ratio: {} ", i, fullCooperativeCaching.getCacheHitRatio());
 
             PopularCache popularCache = new PopularCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
-            log.info("PopularCaching: Capacity: {}, cache hit ratio: {} ", i, popula
+            log.info("PopularCaching: Capacity: {}, cache hit ratio: {} ", i, popularCache.getCacheHitRatio());
