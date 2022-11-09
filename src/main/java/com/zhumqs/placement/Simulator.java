@@ -155,4 +155,7 @@ public class Simulator {
             FairCache fairCache = new FairCache(users, contents, ExperimentConstants.DEVICE_CAPACITY, trustMat);
             log.info("FairCaching: Capacity: {}, cache hit ratio: {} ", i, fairCache.getCacheHitRatio());
             log.info("");
-     
+        }
+    }
+
+    public 
