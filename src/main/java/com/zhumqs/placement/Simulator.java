@@ -160,4 +160,5 @@ public class Simulator {
 
     public static void main(String[] args) {
 //        Simulator.testSocialImpact();
-//        Simulator.testUserNumberIm
+//        Simulator.testUserNumberImpact();
+        Simulator.te
