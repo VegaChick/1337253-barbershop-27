@@ -162,4 +162,5 @@ public class Simulator {
 //        Simulator.testSocialImpact();
 //        Simulator.testUserNumberImpact();
         Simulator.testContentNumberImpact();
-//        Simulator.testCapaci
+//        Simulator.testCapacityImpact();
+    }
