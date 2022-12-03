@@ -14,4 +14,5 @@ import java.util.List;
  */
 @Slf4j
 public class RequestProbability {
-    private List<MobileUser> user
+    private List<MobileUser> users;
+    private Li
