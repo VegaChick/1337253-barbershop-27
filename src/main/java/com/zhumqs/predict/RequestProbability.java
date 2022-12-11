@@ -17,4 +17,4 @@ public class RequestProbability {
     private List<MobileUser> users;
     private List<Content> contents;
 
-    public RequestProbability(List<MobileUser> u
+    public RequestProbability(List<MobileUser> users, List<Conten
