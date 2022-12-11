@@ -18,4 +18,5 @@ public class RequestProbability {
     private List<Content> contents;
 
     public RequestProbability(List<MobileUser> users, List<Content> contents) {
-        this.us
+        this.users = users;
+        this.
