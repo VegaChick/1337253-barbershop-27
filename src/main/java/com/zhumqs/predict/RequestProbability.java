@@ -22,4 +22,4 @@ public class RequestProbability {
         this.contents = contents;
     }
 
-    public
+    public double[][] 
