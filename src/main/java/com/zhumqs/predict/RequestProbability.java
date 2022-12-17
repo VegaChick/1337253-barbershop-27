@@ -22,4 +22,5 @@ public class RequestProbability {
         this.contents = contents;
     }
 
-    public double[][] getRequestProbabilityM
+    public double[][] getRequestProbabilityMatrix() {
+     
