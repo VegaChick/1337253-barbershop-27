@@ -23,4 +23,4 @@ public class RequestProbability {
     }
 
     public double[][] getRequestProbabilityMatrix() {
-     
+        int userNumbe
