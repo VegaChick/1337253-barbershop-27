@@ -25,4 +25,4 @@ public class RequestProbability {
     public double[][] getRequestProbabilityMatrix() {
         int userNumber = users.size();
         int contentNumber = contents.size();
-        double[][] requestProbabilityMat = new double[userNu
+        double[][] requestProbabilityMat = new double[userNumber][contentNumber]
