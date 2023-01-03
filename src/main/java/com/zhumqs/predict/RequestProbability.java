@@ -26,4 +26,5 @@ public class RequestProbability {
         int userNumber = users.size();
         int contentNumber = contents.size();
         double[][] requestProbabilityMat = new double[userNumber][contentNumber];
-        for (int i = 0; i < userNumber;
+        for (int i = 0; i < userNumber; i++) {
+          
