@@ -30,3 +30,5 @@ public class RequestProbability {
             for (int j = 0; j < contentNumber; j++) {
                 requestProbabilityMat[i][j] = Math.random();
             }
+        }
+    
