@@ -35,4 +35,4 @@ public class RequestProbability {
     }
 
     public static void main(String[] args) {
-        RequestProbability probability = new
+        RequestProbability probability = new RequestProbability(
