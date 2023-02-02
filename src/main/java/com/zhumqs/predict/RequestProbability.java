@@ -35,4 +35,4 @@ public class RequestProbability {
     }
 
     public static void main(String[] args) {
-        RequestProbability probability = new RequestProbability(
+        RequestProbability probability = new RequestProbability(DataMockUtils.mockUs
