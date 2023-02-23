@@ -48,3 +48,23 @@ public class DataMockUtils {
         }
         return trustMat;
     }
+
+    public static List<Content> mockContents(int contentNumber) {
+        List<Content> contents = new ArrayList<>();
+        for (int i = 1; i <= contentNumber; i++) {
+            Content content = new Content();
+            content.setContentId(i);
+            content.setSize(ExperimentConstants.CONTENT_DEFAULT_SIZE);
+            double popularity = Math.random();
+            if (i < 100) {
+                while (popularity < 0.8) {
+                    popularity = Math.random();
+                }
+            } else {
+                while (popularity > 0.4) {
+                    popularity = Math.random();
+                }
+            }
+            content.setPopularity(popularity);
+            contents.add(content);
+        }
