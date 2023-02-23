@@ -38,3 +38,13 @@ public class DataMockUtils {
         }
         return users;
     }
+
+    public static int[][] mockTrustRelationship(double socialWeight, int userNumber) {
+        int[][] trustMat = new int[userNumber][userNumber];
+        for (int i = 0; i < userNumber; i++) {
+            for  (int j = 0; j < userNumber; j++)  {
+                trustMat[i][j] = Math.random() < socialWeight ? 1 : 0;
+            }
+        }
+        return trustMat;
+    }
