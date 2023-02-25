@@ -68,3 +68,17 @@ public class DataMockUtils {
             content.setPopularity(popularity);
             contents.add(content);
         }
+        return contents;
+    }
+
+    public static void main(String[] args) {
+        log.info(JSON.toJSONString(mockUserInfo(100)));
+        printMatrix(mockTrustRelationship(0.5, 100));
+    }
+
+    private static void printMatrix(int[][] mat) {
+        for (int[] arr : mat) {
+            System.out.println(Arrays.toString(arr) + "\n");
+        }
+    }
+}
