@@ -1,3 +1,4 @@
 package com.zhumqs.utils;
 
-import java.
+import java.util.Random;
+
