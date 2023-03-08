@@ -7,4 +7,4 @@ import java.util.Random;
  * @date 20191201
  */
 public class RandomUtils {
-    public static 
+    public static int getRandomInterv
