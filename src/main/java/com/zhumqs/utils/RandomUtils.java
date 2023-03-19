@@ -8,4 +8,4 @@ import java.util.Random;
  */
 public class RandomUtils {
     public static int getRandomInterval(int a, int b) {
-        return (int)(a + Math
+        return (int)(a + Math.random()*(b - a +
