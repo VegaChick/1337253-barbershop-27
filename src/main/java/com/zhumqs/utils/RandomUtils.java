@@ -11,4 +11,5 @@ public class RandomUtils {
         return (int)(a + Math.random()*(b - a + 1));
     }
 
-    public static int getRan
+    public static int getRandom(int a)  {
+      
