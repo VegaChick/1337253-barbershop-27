@@ -12,4 +12,4 @@ public class RandomUtils {
     }
 
     public static int getRandom(int a)  {
-      
+        Random r = new Rand
