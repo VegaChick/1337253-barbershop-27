@@ -13,4 +13,5 @@ public class RandomUtils {
 
     public static int getRandom(int a)  {
         Random r = new Random();
-        ret
+        return r.nextInt(a);
+    }
